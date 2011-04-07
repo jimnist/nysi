@@ -1,0 +1,16 @@
+{
+  "name": "NYsi",
+  "version": "0.0.0.2",
+  "description": "NYT paywall ingnorer.",
+  "browser_action": {
+    "icons": {
+      "128": "nysi128.ico",
+      "48": "nysi48.ico",
+      "16": "nysi16.ico"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["http://*.nytimes.com/*"],
+    "css": ["nysi.css"]
+  }]
+}
